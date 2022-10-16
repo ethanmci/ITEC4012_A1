@@ -10,6 +10,7 @@
   margin-top: 25vh;
   font: italic small-caps bold 20px Arial, sans-serif;
   font-size: large;
+  color: darkslategray;
 }
 
 table, td, th {
@@ -20,7 +21,6 @@ table, td, th {
 
 td, th {
   padding: 1em;
-  color: darkslategray;
 }
 
 tr:hover {
