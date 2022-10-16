@@ -13,8 +13,9 @@
 }
 
 table, td, th {
-  border: 1px solid;
+  border: 3px solid darkslategray;
   border-collapse: collapse;
+  box-shadow: 0 0 1px transparent;
 }
 
 td, th {

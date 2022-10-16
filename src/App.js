@@ -28,21 +28,21 @@ function App() {
     }
   ]
   
-  function createHead(headerKeys) {
+  const createHead = (headerKeys) => {
     return (
       <thead><tr>{ headerKeys.map((e) => <th>{e}</th>) }</tr></thead>
     )
   }
 
   // function to create a body
-  function createBody(data) {
+  const createBody = (data) => {
     return (
       <tbody>{ data.map(entry => { return readRows(entry);}) }</tbody>
     )
   }
 
   // function to read a 'row'
-  function readRows(entry) {
+  const readRows = (entry) => {
     const newRow = Object.keys(entry).map((key, index) => {
       console.log(entry[key]);
       return (
@@ -52,7 +52,7 @@ function App() {
     return <tr>{ newRow }</tr>;
   }
 
-  function generateTable(data) {
+  const generateTable = (data) => {
     // getting a list of header keys
     const headerKeys = Object.keys(data[0]);
 
